@@ -1,8 +1,66 @@
+@use './variables' as *;
 .contact {
 	display: flex;
 	justify-content: space-around;
+	h4 {
+		text-align: center;
+		margin: 3% 0;
+	}
+	.formContainer {
+		margin-top: -6%;
+		width: 45vw;
+		.topContact {
+			display: flex;
+			gap: 2%;
+			input[type='text'] {
+				width: 22vw;
+				background-color: rgb(39 39 42);
+				color: $white;
+				border: none;
+				padding: 2%;
+			}
+			input[type='email'] {
+				width: 22vw;
+				background-color: rgb(39 39 42);
+				color: $white;
+				border: none;
+				padding: 2%;
+			}
+		}
+		textarea {
+			background-color: rgb(39 39 42);
+			color: $white;
+			border: none;
+			margin: 2% 0%;
+			width: 45vw;
+			resize: none;
+			height: 40vh;
+			padding: 2%;
+		}
+		button {
+			border-radius: 9999px;
+			background-color: rgb(39 39 42);
+			color: $white;
+			width: 20vw;
+			margin: 0 auto;
+		}
+	}
 	form {
 		display: flex;
 		flex-direction: column;
+		font-size: 2rem;
+	}
+	.thankYou {
+		display: none;
+		text-align: center;
+		width: 45vw;
+		button {
+			font-size: 2.4rem;
+			border-radius: 9999px;
+			background-color: rgb(39 39 42);
+			color: $white;
+			width: 20vw;
+			margin: 0 auto;
+		}
 	}
 }

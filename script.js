@@ -3,10 +3,11 @@ portfolio = {};
 portfolio.hamburger = () => {
 	const button = document.querySelector('.menu-collapsed');
 	const slideshow = document.getElementById('slideshow');
-
+	const map = document.getElementById('map');
 	button.addEventListener('click', () => {
 		button.classList.toggle('menu-expanded');
 		slideshow.classList.toggle('relative');
+		map.classList.toggle('relative');
 	});
 };
 
@@ -84,10 +85,41 @@ portfolio.slideshow = () => {
 	});
 };
 
+portfolio.email = () => {
+	const formContainer = document.getElementById('formContainer');
+	const form = document.getElementById('contact');
+	const thankyou = document.getElementById('thanks');
+	const newContact = document.getElementById('newForm');
+	form.addEventListener('submit', function (event) {
+		formContainer.style.display = 'none';
+		thankyou.style.display = 'block';
+		event.preventDefault();
+		emailjs
+			.sendForm(
+				'service_1xou5c7',
+				'template_p68bvop',
+				event.target,
+				'8X5aCUiGHuFKNdN71'
+			)
+			.then(() => {})
+			.catch(() => {
+				alert(
+					'Email Service is temporarily unavailable. Please contact me on Sammylam505@gmail.com'
+				);
+			});
+	});
+	newContact.addEventListener('click', function () {
+		form.reset();
+		formContainer.style.display = 'block';
+		thankyou.style.display = 'none';
+	});
+};
+
 portfolio.init = () => {
 	portfolio.hamburger();
 	portfolio.typeWriter();
 	portfolio.slideshow();
+	portfolio.email();
 };
 
 portfolio.init();

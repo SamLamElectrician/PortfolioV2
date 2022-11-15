@@ -94,9 +94,13 @@
 					<div class="slide">
 						<img src="./images/triviaTime.png" id="img" alt="Trivia time" />
 						<div class="info">
-							<h2>hello world</h2>
-							<p>Photoshop conversion using purely css and html</p>
-							<p>HTML CSS</p>
+							<h2>TRIVIA TIME</h2>
+							<p>
+								A react quiz app using openTriviaDB API to generate questions
+								and dicebearAPI to generate an icon. Firebase is used to saved
+								scores and user info
+							</p>
+							<p>HTML | SASS | CSS | FIREBASE | REACT | RESTFUL API</p>
 							<a href="https://culinarytaste.netlify.app/" target="__blank"
 								><img
 									src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"
@@ -116,7 +120,25 @@
 					<div class="slide">
 						<img src="./images/myanimelist.png" alt="My Anime List" />
 						<div class="info">
-							<h2>hello world</h2>
+							<h2>My Anime List</h2>
+							<p>
+								A react project using the JikanAPI to search a database to
+								display top 5 animes, a random list of animes and a search
+								function. Also, uses email/gmail authentication
+							</p>
+							<p>HTML | SASS | CSS | FIREBASE | REACT | RESTFUL API</p>
+							<a href="https://samanimelist.netlify.app/" target="__blank"
+								><img
+									src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"
+									alt="netlify badge"
+							/></a>
+							<a
+								href="https://github.com/SamLamElectrician/SammyLamProject3"
+								target="__blank"
+								><img
+									src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+									alt="github badge"
+							/></a>
 						</div>
 					</div>
 
@@ -124,7 +146,24 @@
 					<div class="slide">
 						<img src="./images/activityGen.PNG" alt="Activity Generator" />
 						<div class="info">
-							<h2>hello world</h2>
+							<h2>Activity Generator</h2>
+							<p>
+								Utilize Open weather API and Bored API to generate the weather
+								and activity to match
+							</p>
+							<p>HTML | SASS | JavaScript | API</p>
+							<a href="https://activitygenerator.netlify.app/" target="__blank"
+								><img
+									src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"
+									alt="netlify badge"
+							/></a>
+							<a
+								href="https://github.com/SamLamElectrician/Activity-Generator"
+								target="__blank"
+								><img
+									src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+									alt="github badge"
+							/></a>
 						</div>
 					</div>
 
@@ -132,13 +171,44 @@
 					<div class="slide">
 						<img src="./images/beachstays.PNG" alt="beachstays Project" />
 						<div class="info">
-							<h2>hello world</h2>
+							<h2>beachstays</h2>
+							<p>
+								Photoshop conversion for a client using html, css, js. Uses a
+								functional contact form, live comment section and mobile menus
+							</p>
+							<p>HTML | SASS | JAVASCRIPT</p>
+							<a href="https://beachstaysguyana.netlify.app/" target="__blank"
+								><img
+									src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"
+									alt="netlify badge"
+							/></a>
+							<a
+								href="https://github.com/SamLamElectrician/BeachStays"
+								target="__blank"
+								><img
+									src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+									alt="github badge"
+							/></a>
 						</div>
 					</div>
 					<div class="slide">
 						<img src="./images/tasty.PNG" alt="Tasty Project" />
 						<div class="info">
-							<h2>hello world</h2>
+							<h2>Tasty</h2>
+							<p>Photoshop conversion using purely css and html</p>
+							<p>HTML CSS</p>
+							<a href="https://culinarytaste.netlify.app/" target="__blank"
+								><img
+									src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"
+									alt="netlify badge"
+							/></a>
+							<a
+								href="https://github.com/SamLamElectrician/TastyDesignProject"
+								target="__blank"
+								><img
+									src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+									alt="github badge"
+							/></a>
 						</div>
 					</div>
 
@@ -149,22 +219,38 @@
 			</section>
 			<section class="scroll-area contact">
 				<div id="map" style="width: 40vw; height: 34vw"></div>
-				<div class="formContainer">
-					<form action="submit">
-						<div class="fields">
-							<label class="form-name" for="name">Name</label>
-							<input type="text" name="user-name" />
+
+				<div class="formContainer" id="formContainer">
+					<h4>Let's get in Touch</h4>
+					<form action="submit" id="contact">
+						<div class="topContact">
+							<div class="fields">
+								<label class="form-name" for="name" aria-label="Name"></label>
+								<input type="text" name="user-name" placeholder="Name" />
+							</div>
+							<div class="fields">
+								<label class="form-name" for="email" aria-label="Email"></label>
+								<input type="email" name="user-email" placeholder="Email" />
+							</div>
 						</div>
 						<div class="fields">
-							<label class="form-name" for="email">Email</label>
-							<input type="email" name="user-email" />
-						</div>
-						<div class="fields">
-							<label class="form-name" for="message">Message</label>
-							<textarea type="input" name="message"></textarea>
+							<label
+								class="form-name"
+								for="message"
+								aria-label="Message"
+							></label>
+							<textarea
+								type="input"
+								name="message"
+								placeholder="Message"
+							></textarea>
 						</div>
 						<button id="contact-submit" class="form-submit">Send</button>
 					</form>
+				</div>
+				<div id="thanks" class="thankYou">
+					<h3>Thank you for reaching out. I will respond within 48 hours</h3>
+					<button id="newForm">Send Another Message</button>
 				</div>
 			</section>
 			<div class="socials">
@@ -200,6 +286,9 @@
 				zoom: 12,
 				style: 'mapbox://styles/mapbox/dark-v10',
 			});
+			const marker2 = new mapboxgl.Marker({ color: 'purple' })
+				.setLngLat([-79.3832, 43.6622])
+				.addTo(map);
 		</script>
 
 		<script>
