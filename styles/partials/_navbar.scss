@@ -1,0 +1,143 @@
+@use 'variables' as *;
+header {
+	padding: 0.5% 0%;
+	height: 7%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: hsla(200, 100%, 0%, 0.3);
+	backdrop-filter: blur(10px);
+	.headerImage {
+		margin-left: 2%;
+		height: 100%;
+		img {
+			max-height: 100%;
+			filter: invert(100%) sepia(86%) saturate(0%) hue-rotate(246deg)
+				brightness(108%) contrast(106%);
+		}
+	}
+	.color {
+		color: green;
+	}
+}
+nav {
+	display: flex;
+	gap: 15px;
+	justify-content: flex-end;
+	margin-right: 5%;
+	position: sticky;
+
+	top: 0;
+
+	a {
+		display: flex;
+		text-decoration: none;
+		font-size: 1.3rem;
+		color: #c5c6c7;
+	}
+}
+
+html,
+body {
+	height: 100%;
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+}
+.b-a {
+	z-index: 100000;
+	transition: all 0.25s;
+	content: '';
+	position: absolute;
+	height: 6px;
+	width: 30px;
+	border-radius: 15px;
+	background-color: rgba(255, 255, 255, 0.95);
+}
+.menu-collapsed {
+	transition: all 0.25s;
+	position: fixed;
+	top: 10px;
+	right: 9px;
+	height: 36px;
+	width: 36px;
+	z-index: 411;
+
+	cursor: pointer;
+	ul {
+		transition: all 0s;
+		position: fixed;
+		left: -9000px;
+		z-index: 10000;
+	}
+}
+.bar {
+	@extend .b-a;
+	position: fixed;
+	right: 12px;
+	top: 24px;
+	margin: 10px 30px 0 0;
+	&:before {
+		@extend .b-a;
+		top: -8px;
+	}
+	&:after {
+		@extend .b-a;
+		top: 8px;
+	}
+}
+.b-a-expanded {
+	transition: all 0.25s;
+	top: -0px;
+}
+.menu-expanded {
+	position: absolute;
+	z-index: 1000;
+	z-index: 411;
+	transition: all 0.25s;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 100px;
+	height: 100vh;
+	width: 100%;
+	border-radius: 0px;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.85);
+	backdrop-filter: blur(10px);
+	ul {
+		transition: all 0s;
+		position: relative;
+		left: 0;
+		z-index: 2;
+	}
+	a {
+		transition: all 0.15s;
+		text-decoration: none;
+		font-size: 2em;
+		padding: 5px;
+		color: #fff;
+		display: block;
+		&:hover {
+			background-color: rgba(white, 0.8);
+			transition: all 0.15s;
+			letter-spacing: 2px;
+			color: #333;
+			border: 1px solid rgba(255, 255, 255, 0.15);
+		}
+	}
+	.bar {
+		background-color: transparent;
+		transition: all 0.25s;
+		&:before {
+			@extend .b-a-expanded;
+			transform: rotate(45deg);
+		}
+		&:after {
+			@extend .b-a-expanded;
+			transform: rotate(-45deg);
+		}
+	}
+}

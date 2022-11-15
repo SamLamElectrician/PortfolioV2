@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/styles.css" />
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link
+			href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
+			rel="stylesheet"
+		/>
+		<script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init('8X5aCUiGHuFKNdN171');
+			})();
+		</script>
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<div class="headerImage">
+				<img src="/images/logo-no-background.png" alt="Sammy Lam Logo" />
+				<!-- &#60; <span class="color">Web</span> &#62; Sammy Lam &#60;
+				<span class="color">/ Dev</span> &#62; -->
+			</div>
+			<div class="menu-collapsed">
+				<div class="bar"></div>
+				<nav>
+					<ul>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#aboutMe">About Me</a></li>
+						<li><a href="#toolKit">Tool Kit</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="scroll-container">
+			<section class="scroll-area hero">
+				<div class="heroText" data-aos="fade-down" data-aos-duration="1500">
+					<h2>CODING FROM MY ROOM TO YOUR OFFICE</h2>
+					<button>
+						<a>Welcome</a>
+					</button>
+				</div>
+			</section>
+			<section class="scroll-area overview">
+				<div class="left2">
+					<div class="imgContainer">
+						<img
+							src="https://avatars.githubusercontent.com/u/99058689?v=4"
+							alt="profile of Sam"
+						/>
+					</div>
+				</div>
+				<div class="right2" id="right2">
+					<div class="textContainer" id="textContainer">
+						<h1>Sammy Lam</h1>
+
+						<!-- For TypeWriter effect, referenced: https://www.youtube.com/watch?v=nxoHR9lltK0 -->
+						<h2 class="typeContainer">
+							<span class="text firstText">Frontend Web Developer &</span
+							><span class="sr-only">Gamer</span>
+							<span class="text secondText chrome" aria-hidden="true"></span>
+						</h2>
+						<p>
+							A front end developer with a background in electrical and IT
+							services with a passion to create responsive and accessible
+							websites. I am a creative problem solver with excellent team
+							skills due to my background and I am looking for a position on
+							your team!
+						</p>
+						<p>
+							When I am not working on a passion project, you will find me
+							binging anime/manga or hanging out at the gym. I also play video
+							games such as League of Legends and Valorant.
+						</p>
+						<div class="Sphere"></div>
+					</div>
+				</div>
+			</section>
+			<section class="scroll-area slideshow" id="slideshow">
+				<h4>My Projects</h4>
+				<div class="slider">
+					<!-- slide 1 -->
+					<div class="slide">
+						<img src="./images/triviaTime.png" id="img" alt="Trivia time" />
+						<div class="info">
+							<h2>hello world</h2>
+							<p>Photoshop conversion using purely css and html</p>
+							<p>HTML CSS</p>
+							<a href="https://culinarytaste.netlify.app/" target="__blank"
+								><img
+									src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"
+									alt="netlify badge"
+							/></a>
+							<a
+								href="https://github.com/SamLamElectrician/TastyDesignProject"
+								target="__blank"
+								><img
+									src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+									alt="github badge"
+							/></a>
+						</div>
+					</div>
+
+					<!-- slide 2 -->
+					<div class="slide">
+						<img src="./images/myanimelist.png" alt="My Anime List" />
+						<div class="info">
+							<h2>hello world</h2>
+						</div>
+					</div>
+
+					<!-- slide 3 -->
+					<div class="slide">
+						<img src="./images/activityGen.PNG" alt="Activity Generator" />
+						<div class="info">
+							<h2>hello world</h2>
+						</div>
+					</div>
+
+					<!-- slide 4 -->
+					<div class="slide">
+						<img src="./images/beachstays.PNG" alt="beachstays Project" />
+						<div class="info">
+							<h2>hello world</h2>
+						</div>
+					</div>
+					<div class="slide">
+						<img src="./images/tasty.PNG" alt="Tasty Project" />
+						<div class="info">
+							<h2>hello world</h2>
+						</div>
+					</div>
+
+					<!-- Control buttons -->
+					<button class="btn btn-prev"><</button>
+					<button class="btn btn-next">></button>
+				</div>
+			</section>
+			<section class="scroll-area contact">
+				<div id="map" style="width: 40vw; height: 34vw"></div>
+				<div class="formContainer">
+					<form action="submit">
+						<div class="fields">
+							<label class="form-name" for="name">Name</label>
+							<input type="text" name="user-name" />
+						</div>
+						<div class="fields">
+							<label class="form-name" for="email">Email</label>
+							<input type="email" name="user-email" />
+						</div>
+						<div class="fields">
+							<label class="form-name" for="message">Message</label>
+							<textarea type="input" name="message"></textarea>
+						</div>
+						<button id="contact-submit" class="form-submit">Send</button>
+					</form>
+				</div>
+			</section>
+			<div class="socials">
+				<ul>
+					<li>
+						<a href="https://github.com/SamLamElectrician" target="_blank"
+							><img src="./images/github.png" alt="github icon"
+						/></a>
+					</li>
+					<li>
+						<a
+							href="https://www.linkedin.com/in/sammy-lam-front-end-dev-electrician/"
+							target="_blank"
+							><img src="./images/linkedin.png" alt="github icon"
+						/></a>
+					</li>
+					<li>
+						<a href="SammyLamResume.pdf" target="_blank"
+							><img src="./images/resume.png" alt="github icon"
+						/></a>
+					</li>
+					<li class="line"></li>
+				</ul>
+			</div>
+		</main>
+		<script src="script.js"></script>
+		<script>
+			mapboxgl.accessToken =
+				'pk.eyJ1IjoicG9ja3lsb2NreSIsImEiOiJjbGE5MXA2aTQwN2Y0M3dwNWhnMHpoMW5pIn0.qUJd8KmMf4R9LUCLCfQHwA';
+			var map = new mapboxgl.Map({
+				container: 'map',
+				center: [-79.3832, 43.6622],
+				zoom: 12,
+				style: 'mapbox://styles/mapbox/dark-v10',
+			});
+		</script>
+
+		<script>
+			const Texts = [
+				'JavaScript',
+				'CSS',
+				'HTML',
+				'React',
+				'Python',
+				'Jest',
+				'BootStrap',
+				'Sass',
+				'JQuery',
+				'Git',
+				'RESTful API',
+				'Firebase',
+				'Accessibility',
+			];
+
+			var tagCloud = TagCloud('.Sphere', Texts, {
+				// Sphere radius in px
+				radius: 200,
+				// animation speed
+				// slow, normal, fast
+				maxSpeed: 'normal',
+				initSpeed: 'fast',
+				// Rolling direction [0 (top) , 90 (left), 135 (right-bottom)]
+				direction: 135,
+				// interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+				keep: true,
+			});
+		</script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>

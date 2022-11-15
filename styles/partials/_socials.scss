@@ -1,0 +1,35 @@
+@use 'variables' as *;
+.socials {
+	z-index: 0;
+	position: sticky;
+	bottom: 0;
+	width: 8%;
+	height: 30%;
+	ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+		li {
+			width: 32px;
+			img {
+				width: 100%;
+				filter: invert(100%) sepia(86%) saturate(0%) hue-rotate(246deg)
+					brightness(108%) contrast(106%);
+			}
+			&:hover {
+				scale: 1.3;
+				transition: 0.7s;
+				filter: invert(29%) sepia(66%) saturate(6513%) hue-rotate(235deg)
+					brightness(109%) contrast(98%);
+			}
+		}
+		.line {
+			border: 1px solid #fff;
+			height: 100px;
+			width: 1px;
+		}
+	}
+}

@@ -1,0 +1,79 @@
+@use 'variables' as *;
+.overview {
+	h1 {
+		margin-bottom: 1%;
+		z-index: -1000;
+	}
+	h2 {
+		margin: 2%;
+	}
+	.left2 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.imgContainer {
+		height: 65vh;
+		img {
+			border-radius: 80%;
+			height: 100%;
+			width: 100%;
+		}
+	}
+	.right2 {
+		font-size: 47%;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.textContainer {
+	margin: 2% 3%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	p {
+		color: rgb(235, 231, 231);
+		margin: 1%;
+	}
+	.Sphere {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.typeContainer {
+	.text {
+		position: relative;
+	}
+	.secondText {
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-color: $pink;
+			border-left: 2.5px solid;
+			animation: animate 3s steps(12) infinite;
+		}
+		&::after {
+			content: '.';
+		}
+	}
+
+	@keyframes animate {
+		40%,
+		60% {
+			left: calc(100% + 10px);
+		}
+		100% {
+			left: 0%;
+		}
+	}
+}
