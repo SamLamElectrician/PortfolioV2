@@ -4,6 +4,8 @@ header {
 	height: 7%;
 	width: 100%;
 	position: fixed;
+	display: flex;
+	align-items: center;
 	top: 0;
 	left: 0;
 	background-color: hsla(200, 100%, 0%, 0.3);
@@ -11,10 +13,12 @@ header {
 	.headerImage {
 		margin-left: 2%;
 		height: 100%;
+		a {
+			height: 7%;
+			width: 100%;
+		}
 		img {
 			max-height: 100%;
-			filter: invert(100%) sepia(86%) saturate(0%) hue-rotate(246deg)
-				brightness(108%) contrast(106%);
 		}
 	}
 	.color {
@@ -33,7 +37,7 @@ nav {
 	a {
 		display: flex;
 		text-decoration: none;
-		font-size: 1.3rem;
+		font-size: 3rem;
 		color: #c5c6c7;
 	}
 }
@@ -93,7 +97,6 @@ body {
 .menu-expanded {
 	position: absolute;
 	z-index: 1000;
-	z-index: 411;
 	transition: all 0.25s;
 	text-align: center;
 	display: flex;
@@ -104,7 +107,7 @@ body {
 	width: 100%;
 	border-radius: 0px;
 	top: 0;
-	left: 0;
+	right: 0;
 	background-color: rgba(0, 0, 0, 0.85);
 	backdrop-filter: blur(10px);
 	ul {
@@ -116,7 +119,7 @@ body {
 	a {
 		transition: all 0.15s;
 		text-decoration: none;
-		font-size: 2em;
+		font-size: 4.5rem;
 		padding: 5px;
 		color: #fff;
 		display: block;

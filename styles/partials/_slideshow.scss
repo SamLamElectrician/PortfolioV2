@@ -4,6 +4,7 @@
 	flex-direction: column;
 	gap: 2%;
 	h4 {
+		font-size: 6rem;
 		margin: 0;
 		padding: 0;
 	}
@@ -26,6 +27,7 @@
 	transition: all 0.5s;
 	&:hover {
 		.info {
+			transition: 0s;
 			width: 100%;
 			height: 100%;
 			position: absolute;
@@ -40,18 +42,19 @@
 .slide img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: fill;
 }
 
 .btn {
 	position: absolute;
 	width: 40px;
-	height: 40px;
+	height: 130px;
 	padding: 10px;
 	border: none;
-	border-radius: 50%;
+	border-radius: 5%;
 	z-index: 10px;
 	cursor: pointer;
+	border: 3px solid black;
 	background-color: #fff;
 	font-size: 18px;
 }
@@ -60,31 +63,33 @@
 }
 .btn-prev {
 	top: 45%;
-	left: 2%;
+	left: 0%;
 }
 
 .btn-next {
 	top: 45%;
-	right: 2%;
+	right: 0;
 }
 
 .info {
 	h2 {
-		font-size: 3rem;
+		font-size: 4.5rem;
 	}
 	p {
-		font-size: 1.8rem;
+		margin: 2% 10%;
+		font-size: 2.4rem;
 	}
 	a {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
+		max-width: 320px;
 		width: 100%;
 		gap: 20px;
-		margin-top: 2%;
+		margin: 2% auto;
 		img {
-			width: 20%;
+			width: 100%;
 			&:hover {
 				border: 4px solid $blue;
 			}

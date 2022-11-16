@@ -215,12 +215,13 @@ html {
 html {
 	background: #f2f2f2;
 	height: 100%;
+	overflow-y: none;
+	font-size: 62.5%;
 }
 
 .scroll-container,
 .scroll-area {
 	max-width: 100vw;
-	font-size: 60px;
 	height: 100vh;
 }
 
@@ -309,4 +310,9 @@ a {
 
 .hidden {
 	display: none;
+}
+
+button,
+a {
+	cursor: pointer;
 }

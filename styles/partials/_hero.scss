@@ -9,10 +9,12 @@
 	}
 	h2 {
 		text-align: center;
+		font-size: 8rem;
 	}
 	button {
 		margin-bottom: 7%;
-		font-size: 55%;
+		font-size: 2.8rem;
+
 		background-color: transparent;
 		color: #fff;
 		border-radius: 5px;
@@ -21,6 +23,9 @@
 			7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
 		&:hover {
 			background-color: $blue;
+		}
+		a {
+			color: #fff;
 		}
 	}
 }

@@ -22,12 +22,14 @@
 				emailjs.init('8X5aCUiGHuFKNdN171');
 			})();
 		</script>
-		<title>Document</title>
+		<title>Sammy Lam Portfolio</title>
 	</head>
 	<body>
 		<header>
 			<div class="headerImage">
-				<img src="/images/logo-no-background.png" alt="Sammy Lam Logo" />
+				<a href=""
+					><img src="/images/logo-no-background.png" alt="Sammy Lam Logo"
+				/></a>
 				<!-- &#60; <span class="color">Web</span> &#62; Sammy Lam &#60;
 				<span class="color">/ Dev</span> &#62; -->
 			</div>
@@ -35,24 +37,24 @@
 				<div class="bar"></div>
 				<nav>
 					<ul>
-						<li><a href="#projects">Projects</a></li>
 						<li><a href="#aboutMe">About Me</a></li>
-						<li><a href="#toolKit">Tool Kit</a></li>
+						<li><a href="#slideshow">Projects</a></li>
+						<li><a href="#aboutMe">Tool Kit</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
-		<main class="scroll-container">
+		<main class="scroll-container" id="hero">
 			<section class="scroll-area hero">
 				<div class="heroText" data-aos="fade-down" data-aos-duration="1500">
 					<h2>CODING FROM MY ROOM TO YOUR OFFICE</h2>
 					<button>
-						<a>Welcome</a>
+						<a href="#aboutMe">Welcome</a>
 					</button>
 				</div>
 			</section>
-			<section class="scroll-area overview">
+			<section class="scroll-area overview" id="aboutMe">
 				<div class="left2">
 					<div class="imgContainer">
 						<img
@@ -88,7 +90,7 @@
 				</div>
 			</section>
 			<section class="scroll-area slideshow" id="slideshow">
-				<h4>My Projects</h4>
+				<h4 class="projectHeading">My Projects</h4>
 				<div class="slider">
 					<!-- slide 1 -->
 					<div class="slide">
@@ -96,18 +98,18 @@
 						<div class="info">
 							<h2>TRIVIA TIME</h2>
 							<p>
-								A react quiz app using openTriviaDB API to generate questions
-								and dicebearAPI to generate an icon. Firebase is used to saved
-								scores and user info
+								Collaborated with a team to create react quiz app using
+								openTriviaDB API to generate questions and dicebearAPI to
+								generate an icon. Firebase is used to saved scores and user info
 							</p>
 							<p>HTML | SASS | CSS | FIREBASE | REACT | RESTFUL API</p>
-							<a href="https://culinarytaste.netlify.app/" target="__blank"
+							<a href="https://meeseeks-trivia.netlify.app/" target="__blank"
 								><img
 									src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"
 									alt="netlify badge"
 							/></a>
 							<a
-								href="https://github.com/SamLamElectrician/TastyDesignProject"
+								href="https://github.com/junoCollegeProject4-Group7/Project4"
 								target="__blank"
 								><img
 									src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
@@ -217,7 +219,7 @@
 					<button class="btn btn-next">></button>
 				</div>
 			</section>
-			<section class="scroll-area contact">
+			<section class="scroll-area contact" id="contact">
 				<div id="map" style="width: 40vw; height: 34vw"></div>
 
 				<div class="formContainer" id="formContainer">
@@ -226,11 +228,21 @@
 						<div class="topContact">
 							<div class="fields">
 								<label class="form-name" for="name" aria-label="Name"></label>
-								<input type="text" name="user-name" placeholder="Name" />
+								<input
+									type="text"
+									name="user-name"
+									placeholder="Name"
+									required
+								/>
 							</div>
 							<div class="fields">
 								<label class="form-name" for="email" aria-label="Email"></label>
-								<input type="email" name="user-email" placeholder="Email" />
+								<input
+									type="email"
+									name="user-email"
+									placeholder="Email"
+									required
+								/>
 							</div>
 						</div>
 						<div class="fields">
@@ -243,6 +255,7 @@
 								type="input"
 								name="message"
 								placeholder="Message"
+								required
 							></textarea>
 						</div>
 						<button id="contact-submit" class="form-submit">Send</button>
@@ -253,6 +266,7 @@
 					<button id="newForm">Send Another Message</button>
 				</div>
 			</section>
+
 			<div class="socials">
 				<ul>
 					<li>
@@ -276,6 +290,7 @@
 				</ul>
 			</div>
 		</main>
+
 		<script src="script.js"></script>
 		<script>
 			mapboxgl.accessToken =
