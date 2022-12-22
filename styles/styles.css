@@ -581,6 +581,7 @@ body {
 }
 
 .overview h1 {
+  margin-top: 6%;
   margin-bottom: 1%;
   z-index: -1000;
   font-size: 6rem;
@@ -627,7 +628,7 @@ body {
 }
 
 .textContainer {
-  margin: 2% 3%;
+  margin: 6% 3%;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
