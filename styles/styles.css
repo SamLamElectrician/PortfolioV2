@@ -1786,3 +1786,21 @@ main .contact .formContainer .topContact input[type=email] {
 .contact #map {
   border-radius: 15px;
 }
+
+@font-face {
+  font-family: "Noto-Sans";
+  src: url(../../fonts/Noto_Sans/NotoSans-Medium.ttf);
+  font-weight: bodl;
+}
+@font-face {
+  font-family: "Noto-Sans2";
+  src: url(../../fonts/Noto_Sans/NotoSans-Regular.ttf);
+  font-weight: normal;
+}
+* {
+  font-family: "Noto-Sans";
+}
+
+h1 {
+  font-weight: 800;
+}
