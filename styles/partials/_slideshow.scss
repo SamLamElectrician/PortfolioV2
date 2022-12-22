@@ -46,6 +46,7 @@
 }
 
 .btn {
+	box-sizing: border-box;
 	position: absolute;
 	width: 40px;
 	height: 130px;
@@ -59,7 +60,9 @@
 	font-size: 18px;
 }
 .btn:active {
+	box-sizing: border-box;
 	transform: scale(1.1);
+	transition: 0.2s;
 }
 .btn-prev {
 	top: 45%;

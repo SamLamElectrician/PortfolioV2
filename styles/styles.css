@@ -432,8 +432,8 @@ body {
 
 .b-a, .bar:after, .bar:before, .bar {
   z-index: 100000;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
+  -webkit-transition: all 0.01s;
+  transition: all 0.01s;
   content: "";
   position: absolute;
   height: 6px;
@@ -443,8 +443,8 @@ body {
 }
 
 .menu-collapsed {
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
   position: fixed;
   top: 10px;
   right: 9px;
@@ -475,16 +475,16 @@ body {
 }
 
 .b-a-expanded, .menu-expanded .bar:after, .menu-expanded .bar:before {
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
   top: 0px;
 }
 
 .menu-expanded {
   position: absolute;
   z-index: 1000;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -513,8 +513,8 @@ body {
   z-index: 2;
 }
 .menu-expanded a {
-  -webkit-transition: all 0.15s;
-  transition: all 0.15s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
   text-decoration: none;
   font-size: 4.5rem;
   padding: 5px;
@@ -523,16 +523,16 @@ body {
 }
 .menu-expanded a:hover {
   background-color: rgba(255, 255, 255, 0.8);
-  -webkit-transition: all 0.15s;
-  transition: all 0.15s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
   letter-spacing: 2px;
   color: #333;
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 .menu-expanded .bar {
   background-color: transparent;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 .menu-expanded .bar:before {
   -webkit-transform: rotate(45deg);
@@ -761,10 +761,14 @@ body {
     font-size: 1rem;
   }
   main .overview h2 {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
   main .overview .textContainer p {
-    font-size: 1rem;
+    font-size: 1.9rem;
+    width: 100%;
+  }
+  main .overview .web {
+    display: none;
   }
   main .overview .Sphere {
     display: none;
@@ -927,6 +931,9 @@ main .contact .formContainer .topContact input[type=email] {
   }
   main .overview .textContainer p {
     font-size: 1.6rem;
+  }
+  main .overview .textContainer .web {
+    display: none;
   }
   main .overview .Sphere {
     display: none;
@@ -1624,6 +1631,8 @@ main .contact .formContainer .topContact input[type=email] {
 }
 
 .btn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: absolute;
   width: 40px;
   height: 130px;
@@ -1638,8 +1647,12 @@ main .contact .formContainer .topContact input[type=email] {
 }
 
 .btn:active {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .btn-prev {
