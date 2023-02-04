@@ -85,6 +85,7 @@
 							binging anime/manga or hanging out at the gym. I also play video
 							games such as League of Legends and Valorant.
 						</p>
+						<button onclick="pause()">asdas</button>
 						<div class="Sphere"></div>
 					</div>
 				</div>
@@ -375,6 +376,8 @@
 				'Express.Js',
 				'Figma',
 				'Linux',
+				'Netlify',
+				'TypeScript',
 			];
 
 			var tagCloud = TagCloud('.Sphere', Texts, {
@@ -382,8 +385,8 @@
 				radius: 200,
 				// animation speed
 				// slow, normal, fast
-				maxSpeed: 'normal',
-				initSpeed: 'fast',
+				maxSpeed: 'slow',
+				initSpeed: 'slow',
 				// Rolling direction [0 (top) , 90 (left), 135 (right-bottom)]
 				direction: 135,
 				// interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
