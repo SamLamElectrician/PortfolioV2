@@ -566,6 +566,7 @@ body {
 .hero button {
   margin-bottom: 7%;
   font-size: 2.8rem;
+  border: 3px solid black;
   background-color: transparent;
   color: #fff;
   border-radius: 5px;
@@ -1617,8 +1618,8 @@ main .contact .formContainer .topContact input[type=email] {
   transition: all 0.5s;
 }
 .slide:hover .info {
-  -webkit-transition: 0s;
-  transition: 0s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1641,13 +1642,13 @@ main .contact .formContainer .topContact input[type=email] {
           box-sizing: border-box;
   position: absolute;
   width: 40px;
-  height: 130px;
+  height: 100px;
   padding: 10px;
   border: none;
   border-radius: 5%;
   z-index: 10px;
   cursor: pointer;
-  border: 3px solid black;
+  border: 2px solid black;
   background-color: #fff;
   font-size: 18px;
 }
@@ -1655,10 +1656,14 @@ main .contact .formContainer .topContact input[type=email] {
 .btn:active {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: rgb(70, 83, 252);
 }
 
 .btn-prev {
@@ -1731,7 +1736,7 @@ main .contact .formContainer .topContact input[type=email] {
   background-color: rgb(39, 39, 42);
   color: #c5c6c7;
   border: none;
-  padding: 2%;
+  padding: 3%;
   cursor: text;
   border-radius: 15px;
 }
@@ -1740,7 +1745,7 @@ main .contact .formContainer .topContact input[type=email] {
   background-color: rgb(39, 39, 42);
   color: #c5c6c7;
   border: none;
-  padding: 2%;
+  padding: 3%;
   cursor: text;
   border-radius: 15px;
 }
@@ -1757,8 +1762,9 @@ main .contact .formContainer .topContact input[type=email] {
   cursor: text;
 }
 .contact .formContainer button {
-  font-size: 2.6rem;
-  border-radius: 9999px;
+  font-size: 2.1rem;
+  padding: 6px 2px;
+  border-radius: 10px;
   background-color: rgb(39, 39, 42);
   color: #c5c6c7;
   width: 20vw;
@@ -1776,13 +1782,15 @@ main .contact .formContainer .topContact input[type=email] {
   font-size: 2rem;
 }
 .contact .thankYou {
+  font-size: 2.6rem;
   display: none;
   text-align: center;
   width: 45vw;
 }
 .contact .thankYou button {
   font-size: 2.4rem;
-  border-radius: 9999px;
+  padding: 6px 2px;
+  border-radius: 10px;
   background-color: rgb(39, 39, 42);
   color: #c5c6c7;
   width: 20vw;
