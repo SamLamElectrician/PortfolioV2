@@ -63,6 +63,8 @@ portfolio.slideshow = () => {
 		//   move slide by -100%
 		slides.forEach((slide, indx) => {
 			slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+			slides[i].style.transition = '3.0s';
+			slides[i].style.opacity = '0';
 		});
 	});
 
