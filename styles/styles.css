@@ -721,19 +721,21 @@ body {
   }
   main .scroll-area:nth-of-type(2) .left2 {
     width: 100%;
-    min-width: 100vw;
-    min-height: 30vh;
+    min-width: 50vw;
+    min-height: 10vh;
     margin-top: 20%;
   }
   main .scroll-area:nth-of-type(2) .left2 .imgContainer {
-    margin: 2%;
+    margin: 0 auto;
+    width: 60vw;
+    height: 60vw;
   }
   main .scroll-area:nth-of-type(2) .right2 {
     min-height: 70vh;
     min-width: 90vw;
   }
   main .scroll-area:nth-of-type(2) .right2 .text {
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
   main .scroll-area:nth-of-type(2) .right2 .secondText::before {
     display: none;
@@ -777,7 +779,10 @@ body {
   }
   main .slideshow .projectHeading {
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+  main .slideshow h5 {
+    font-size: 2rem;
   }
   main .slideshow .slider {
     width: 90vw;
@@ -837,7 +842,7 @@ body {
             flex-direction: column;
   }
   main .contact .formContainer .topContact input[type=text],
-main .contact .formContainer .topContact input[type=email] {
+  main .contact .formContainer .topContact input[type=email] {
     width: 100%;
     margin-bottom: 4%;
   }
@@ -1002,7 +1007,7 @@ main .contact .formContainer .topContact input[type=email] {
             flex-direction: column;
   }
   main .contact .formContainer .topContact input[type=text],
-main .contact .formContainer .topContact input[type=email] {
+  main .contact .formContainer .topContact input[type=email] {
     width: 100%;
     margin-bottom: 4%;
   }
@@ -1168,7 +1173,7 @@ main .contact .formContainer .topContact input[type=email] {
             flex-direction: column;
   }
   main .contact .formContainer .topContact input[type=text],
-main .contact .formContainer .topContact input[type=email] {
+  main .contact .formContainer .topContact input[type=email] {
     width: 100%;
     margin-bottom: 4%;
   }
@@ -1330,7 +1335,7 @@ main .contact .formContainer .topContact input[type=email] {
             flex-direction: column;
   }
   main .contact .formContainer .topContact input[type=text],
-main .contact .formContainer .topContact input[type=email] {
+  main .contact .formContainer .topContact input[type=email] {
     width: 100%;
     margin-bottom: 4%;
   }
@@ -1493,7 +1498,7 @@ main .contact .formContainer .topContact input[type=email] {
             flex-direction: column;
   }
   main .contact .formContainer .topContact input[type=text],
-main .contact .formContainer .topContact input[type=email] {
+  main .contact .formContainer .topContact input[type=email] {
     width: 100%;
     margin-bottom: 4%;
   }

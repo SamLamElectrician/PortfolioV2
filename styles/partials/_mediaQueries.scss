@@ -30,18 +30,20 @@
 			flex-flow: row wrap;
 			.left2 {
 				width: 100%;
-				min-width: 100vw;
-				min-height: 30vh;
+				min-width: 50vw;
+				min-height: 10vh;
 				margin-top: 20%;
 				.imgContainer {
-					margin: 2%;
+					margin: 0 auto;
+					width: 60vw;
+					height: 60vw;
 				}
 			}
 			.right2 {
 				min-height: 70vh;
 				min-width: 90vw;
 				.text {
-					font-size: 2.8rem;
+					font-size: 2rem;
 				}
 				.secondText {
 					&::before {
@@ -94,7 +96,10 @@
 		.slideshow {
 			.projectHeading {
 				text-align: center;
-				font-size: 4rem;
+				font-size: 3rem;
+			}
+			h5 {
+				font-size: 2rem;
 			}
 			.slider {
 				width: 90vw;
@@ -501,7 +506,7 @@
 		}
 	}
 }
-@media screen and (min-width: 771px) and(max-width: 1025px) {
+@media screen and (min-width: 771px) and (max-width: 1025px) {
 	header {
 		.headerImage {
 			img {
