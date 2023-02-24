@@ -383,7 +383,7 @@ header {
           align-items: center;
   top: 0;
   left: 0;
-  background-color: hsla(200deg, 100%, 0%, 0.3);
+  background-color: hsla(200, 100%, 0%, 0.3);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
@@ -810,7 +810,7 @@ body {
     font-size: 3rem;
   }
   main .slideshow .info p {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
   main .slideshow .info a {
     width: 120px;
