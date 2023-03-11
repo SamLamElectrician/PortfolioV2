@@ -1003,6 +1003,7 @@ body {
   }
   main .contact .formContainer h4 {
     margin-top: 26%;
+    font-size: 4rem;
   }
   main .contact .formContainer .topContact {
     -webkit-box-orient: vertical;
@@ -1014,13 +1015,14 @@ body {
   main .contact .formContainer .topContact input[type=email] {
     width: 100%;
     margin-bottom: 4%;
+    font-size: 1.7rem;
   }
   main .contact .formContainer textarea {
     margin: 2% auto;
     width: 100%;
+    font-size: 1.7rem;
   }
   main .contact .formContainer button {
-    margin: 2%;
     width: 100%;
   }
   main .socials {

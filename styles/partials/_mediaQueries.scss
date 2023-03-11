@@ -314,6 +314,7 @@
 			.formContainer {
 				h4 {
 					margin-top: 26%;
+					font-size: 4rem;
 				}
 				display: flex;
 				flex-direction: column;
@@ -325,14 +326,15 @@
 					input[type='email'] {
 						width: 100%;
 						margin-bottom: 4%;
+						font-size: 1.7rem;
 					}
 				}
 				textarea {
 					margin: 2% auto;
 					width: 100%;
+					font-size: 1.7rem;
 				}
 				button {
-					margin: 2%;
 					width: 100%;
 				}
 			}
