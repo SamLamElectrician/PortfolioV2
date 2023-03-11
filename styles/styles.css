@@ -899,7 +899,7 @@ body {
     margin-top: 20%;
   }
   main .scroll-area:nth-of-type(2) .left2 .imgContainer {
-    margin: 0 auto;
+    margin: 5% auto;
     width: 60vw;
     height: 60vw;
   }
